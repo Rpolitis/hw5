@@ -1,0 +1,64 @@
+/*
+Name: Ryan Politis
+Email: Ryan_Politis@student.uml.edu
+File: style.css
+Date: 11/12/23
+GUI Assignment: Implement Scrabble using javascript and jquery-ui draggable/droppable elements
+What the file does: External CSS file that makes the page look nice and readable
+References: Used https://coolors.co/ to generate colors for website.
+*/
+
+/* Makes the body of the page a darker color and the text a lighter color, also centers text. */
+/* For easier readability and makes the page look nice. */
+body {
+    background-color: #272635;
+    color: #DDFFF7;
+}
+#wrapper {
+    text-align: center;
+}
+
+/* Adds a border to separate the title from the rest of the page. */
+#title {
+    border-bottom: #C14953 solid 5px;
+}
+
+/* Style rules for the score and remaining letters counters to display them side by side. */
+#info_score, #info_remain {
+    display: inline-block;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#score, #score_count, #remain, #remain_count {
+    display: inline-block;
+    font-size: larger;
+}
+
+/* Style rules to pad the area around the buttons and board. */
+#buttons {
+    padding: 10px;
+    padding-bottom: 30px;
+}
+#board {
+    display: block;
+    padding: 20px;
+}
+
+/* Style rules to set the size of the individual pieces of the scrabble board and tiles. */
+.blank, .double_word {
+    width: 110px;
+}
+.tile {
+    width: 100px;
+    height: 100px;
+}
+
+/* Style rules to display the rack as a background image behind the generated tiles. */
+#rack {
+    display: block;
+    background-image: url("../images/scrabble-tile-holder-406774_640.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+}

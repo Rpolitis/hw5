@@ -1,0 +1,68 @@
+<!--
+Name: Ryan Politis
+Email: Ryan_Politis@student.uml.edu
+File: index.html
+Date: 12/12/23
+GUI Assignment: Implement Scrabble using javascript and jquery-ui draggable/droppable elements
+What the file does: HTML file that displays the structure of the page. Contains divs that separate out the 
+game, info, board, buttons, and rack.
+-->
+
+<!-- 
+Website structure inspired by Yong Cho.
+https://yongcho.github.io/GUI-Programming-1/assignment9.html.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scrabble</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.css"/>
+  </head>
+  <body>
+    <!-- Wrapper div that surrounds all content -->
+    <div id="wrapper">
+      <div id="title">
+        <h1>Scrabble</h1>
+      </div>
+      <!-- Game div that surrounds all game related content -->
+      <div id="game">
+        <!-- Info div that surrounds score and remaining tile information -->
+        <div id="info">
+          <div id="info_score">
+            <div id="score">Score:</div>
+            <div id="score_count">0</div>
+          </div>
+          <div id="info_remain">
+            <div id="remain">Remaining Letters:</div>
+            <div id="remain_count">93</div>
+          </div>
+        </div>
+        <!-- Board div that surrounds the scrabble board -->
+        <div id="board">
+          <img src="images/scrabble_tile1.PNG" id="1" class="blank">
+          <img src="images/double_word1.PNG" id="2" class="double_word">
+          <img src="images/scrabble_tile1.PNG" id="3" class="blank">
+          <img src="images/scrabble_tile1.PNG" id="4" class="blank">
+          <img src="images/scrabble_tile1.PNG" id="5" class="blank">
+          <img src="images/double_word1.PNG" id="6" class="double_word">
+          <img src="images/scrabble_tile1.PNG" id="7" class="blank">
+        </div>
+        <!-- Buttons div that surrounds next hand and restart buttons-->
+        <div id="buttons">
+          <input id="next_hand" type="button" value="Next Hand">
+          <input id="restart" type="button" value="Restart Game">
+        </div>
+        <!-- Rack div that surrounds the rack and tiles that are generated within -->
+        <div id="rack">
+          <div id="tiles"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Includes Jquery, Jquery-ui, and my Javascript -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
